@@ -1,0 +1,157 @@
+/* Colores */
+:root {
+    --verde-bosque: #228B22;
+    --verde-claro: #32CD32;
+    --gris-claro: #f4f4f4;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-modificada {
+    width: 150px;
+    height: auto;
+}
+
+/* Estilo principal */
+main {
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.seccion-modificada1, .seccion-modificada2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Sección de texto */
+.contenedor-texto {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.texto-caja {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid var(--verde-bosque);
+    border-radius: 5px;
+    background-color: var(--gris-claro);
+    color: var(--negro);
+    font-size: 16px;
+    resize: none;
+}
+
+.alerta-modificada {
+    display: flex;
+    align-items: center;
+    color: var(--negro);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.alerta-modificada img {
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+}
+
+/* Botones */
+.botones-contenedor, .copiar-contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    background-color: var(--verde-bosque);
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: var(--verde-claro);
+}
+
+/* Sección del muñeco y mensaje */
+.munieco-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.munieco-contenedor img {
+    width: 150px;
+    height: auto;
+}
+
+.parrafo-contenedor h3 {
+    text-align: center;
+    color: var(--verde-bosque);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.parrafo-contenedor p {
+    text-align: center;
+    color: var(--negro);
+    font-size: 16px;
+}
+
+/* Resultado */
+.resultado-contenedor {
+    width: 100%;
+    background-color: var(--gris-claro);
+    border: 2px solid var(--verde-bosque);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.resultado-texto {
+    color: var(--negro);
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+/* Clases para ocultar elementos */
+.ocultar {
+    display: none;
+}
